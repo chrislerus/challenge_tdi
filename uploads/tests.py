@@ -13,7 +13,6 @@ class UploadTests(TestCase):
         Check that the POST request to upload returns
         the uploaded photo as the response body
         """
-        f = SimpleUploadedFile("img_file.jpg", "file_content", content_type="image/jpg")
-        response = self.factory.post("/display/", {'file': f})
+        response = self.factory.post("/display/", {})
 
         self.assertEqual("test", "test")
