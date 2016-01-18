@@ -16,4 +16,4 @@ class UploadTests(TestCase):
         f = SimpleUploadedFile("img_file.jpg", "file_content", content_type="image/jpg")
         response = self.factory.post("/display/", {'file': f})
 
-        self.assertEqual("testtest", "testtest")
+        self.assertEqual("test", "test")
