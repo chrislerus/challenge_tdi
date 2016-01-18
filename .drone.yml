@@ -5,4 +5,5 @@ build:
     - apt-get install python-pip
     - pip install django
     - chmod 755 manage.py
-    - ./manage.py test
+    - python --version
+    - python manage.py test
