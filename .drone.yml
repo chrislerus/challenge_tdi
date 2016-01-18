@@ -9,5 +9,5 @@ build:
     - python manage.py test
   deploy:
     heroku:
-      app: challenge_tdi
+      app: obscure-waters-2777
       force: true
