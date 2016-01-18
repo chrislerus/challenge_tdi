@@ -19,5 +19,6 @@ class UploadTests(TestCase):
         with open('uploads/test_files/test.txt') as fp:
             response = self.factory.post("/display/", {"pic": fp})
         content_response = response.content
-
+        print "Content response " + content_response
+        print "Content file " + content_file
         self.assertEqual(content_file, content_response)
