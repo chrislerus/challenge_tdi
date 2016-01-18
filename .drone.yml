@@ -2,6 +2,7 @@ build:
   image: python
   commands:
     - apt-get update
-    - apt-get install python-django
+    - apt-get install python-pip
+    - pip install django
     - chmod 755 manage.py
     - ./manage.py test
