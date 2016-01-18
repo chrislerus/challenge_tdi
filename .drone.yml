@@ -7,3 +7,7 @@ build:
     - chmod 755 manage.py
     - python --version
     - python manage.py test
+  deploy:
+    heroku:
+      app: challenge_tdi
+      force: true
