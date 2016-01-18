@@ -6,4 +6,4 @@ build:
     - chmod 755 manage.py
     - ls
     - tree
-    - manage.py test
+    - ./manage.py test
