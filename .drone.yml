@@ -4,4 +4,6 @@ build:
     - apt-get update
     - apt-get install python-django
     - chmod 755 manage.py
+    - ls
+    - tree
     - manage.py test
