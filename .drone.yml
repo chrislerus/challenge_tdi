@@ -1,4 +1,7 @@
 build:
   image: python
   commands:
-    - echo foo
+    - sudo apt-get update
+    - sudo apt-get install python-django
+    - chmod 755 manage.py
+    - manage.py test
